@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul{
+    list-style: none;
+}
+body{
+    background-color: blueviolet;
+}
+h1{
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 2.5rem;
+}
+.todo-form{
+    margin: 1rem auto;
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+input{
+    border: none;
+    color: #fff;
+    padding: 1rem 1.5rem;
+    outline:none ;
+    display: inline-block;
+    width: 100%;
+    font-size: 1.2rem;
+    background-color:palevioletred;
+    border-top-left-radius: 3rem;
+
+}
+button{
+    border: none;
+    background-color: brown;
+    outline-color: brown;
+    color: #fff;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    padding: 1rem 1.5rem;
+    display: inline-block;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    cursor: pointer;  
+}
+button:hover{
+    background-color:hsl(0, 74%, 42%);
+    color: antiquewhite;
+}
+ul{
+    list-style: none;
+    background-color:chocolate;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 0 auto;
+    overflow: hidden;
+    
+}
+li{
+    display: flex;
+    gap: 1rem;
+    padding: 1rem 1.5rem;  
+    border-bottom: 1px solid #555;
+
+}
+.text{
+    max-width: 40%;
+}
+.text.complete-task {
+    text-decoration: line-through;
+    text-decoration-color: 1px solid rgba(32, 0, 128, 0.062);
+}
+.edit{
+  margin-left:auto;
+}
+li .complete, 
+li .delete {
+    font-size: 2rem;
+    color: #fff;
+    border: 1px solid #fff;
+    width: 1.5rem;
+    height: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    cursor: pointer; 
+}
+.edit{
+    color: #555;
+    border: 1px solid #555;
+    width: 1.5rem;
+    height: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    cursor: pointer; 
+}
+li.delete {
+    color: #f50606;
+    border: 1px solid #f50606;
+}
+.edit-form {
+    width: 40%;
+}
+
+.edit-form input {
+    border: none;
+    border-bottom: 1px solid blue;
+    outline: none;
+    font-size: 1.2rem;
+    color: inherit;
+    background-color: inherit;
+}
